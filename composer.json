@@ -3,6 +3,7 @@
     "type": "library",
     "description": "Utilities for M-Tech Projects",
     "keywords": [],
+    "version": "master",
     "homepage": "https://www.shipsfocus.com",
     "license": "MIT",
     "require": {
