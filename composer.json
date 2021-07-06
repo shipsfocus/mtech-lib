@@ -15,6 +15,7 @@
         "orchestra/testbench": "^4.0|^5.0"
     },
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "MtLib\\": "src"
