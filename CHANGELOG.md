@@ -2,6 +2,11 @@
 
 All notable changes to `shipsfocus-mtech-lib` will be documented in this file
 
+
+## 2.1.0
+- Added support for PHP 8.x and Laravel 11.x.
+- Added a fillable function for arrays and objects in the Resource class.
+
 ## 1.1.0
 
 - Add Resource extends from JsonResource.

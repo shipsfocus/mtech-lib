@@ -26,6 +26,22 @@ class Resource extends JsonResource
         return $res;
     }
 
+    function fillablesArray(...$keys)
+    {
+        $fillables = array_keys($this->resource);
+    
+        collect($fillables)->merge($keys)->each(function($key) use (&$res) {
+            $res[$key] = $this[$key] ?? null;
+        });
+    
+        return $res;
+    }    
+
+    function fillablesModel(...$keys)
+    {
+        return $this->fillables(...$keys);
+    }        
+
     function makeResponse($res)
     {
         return is_array($this->data) ? array_merge($res, $this->data) : $res;
